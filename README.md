@@ -1,24 +1,23 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+  ## 👭 GO GO GO GOSSIIIPPPPPPPPP 👭
 
-Things you may want to cover:
+  *On t'avait promis tous les secrets de Branda et Natasha.. Rassure toi, tu es au bon endroit.*
 
-* Ruby version
+  <h2> Notre petite bombe :</h2>
 
-* System dependencies
+  ### 1- The Gossip Project 🌏
 
-* Configuration
+  Niveau interface, tu vas être bluffé, on a mis le paquet: </br>
+  Une page welcome, qui salue personnelement l'utilisateur, et lui donne la liste de potins</br>
+  Une page dédiée au détail de chaque potin</br>
+  Une page dédiée au détail de chaque auteur</br>
+  Une page présentant l'équipe</br>
+  Et enfin une page de contact</br>
 
-* Database creation
+  Enjoy baby.
 
-* Database initialization
+  <h2> Gossipement vôtre.</h2>
 
-* How to run the test suite
+  *Note: dans un tout autre registre, ne pas oublier de faire un petit bundle install, un rails db:create, un rails db:migrate, un rails db:create, et enfin un rails server. *
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+  *Ensuite, rendez-vous sur http://localhost:3000/static_pages/welcome/tonprénom 😉*
