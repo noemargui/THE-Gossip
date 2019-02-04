@@ -6,6 +6,11 @@
 
   <body>
     <h1>BIENVENUE <%= params[:id] %>! Ici c’est notre super site de potins, il est chouette, non ?</h1>
-
+    <% gossips.each do |gossip| %>
+      <p>
+        <%= gossip.author %><br/>
+        <%= gossip.content %>
+      </p>
+    <% end %>
   </body>
 </html>

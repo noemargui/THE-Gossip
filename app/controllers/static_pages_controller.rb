@@ -1,6 +1,6 @@
 class StaticPagesController < ApplicationController
   def welcome
-    puts "Ceci est mon super params : #{params}"
+    
   end
   
   def team
@@ -9,4 +9,6 @@ class StaticPagesController < ApplicationController
 
   def contact
   end
+
+
 end
