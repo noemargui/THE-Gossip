@@ -6,11 +6,16 @@
   <body>
     <h1>BIENVENUE <%= params[:id] %>! Ici c’est notre super site de potins, il est chouette, non ?</h1>
     <% @gossips.each do |gossip| %>
-      <p>
-        <%= gossip.user.first_name %><br/>
-        <%= gossip.title %><br/>
-        <a href="/static_pages/gossipdetails/<%= gossip.id %>">Voir plus</a> 
-      </p>
+      <div class=“mx-auto” style=“width: 200px;“>
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src=".../100px180/" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title"><%= gossip.user.first_name %></h5>
+            <p class="card-text"><%= gossip.title %></p>
+            <a href="/static_pages/gossipdetails/<%= gossip.id %>">Voir plus</a>   
+          </div>
+        </div>
+      </div>
     <% end %>
   </body>
 </html>

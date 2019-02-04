@@ -38,7 +38,7 @@ end
 end
 
 20.times do
-  gossip = Gossip.create!(title: Faker::TvShows::RickAndMorty.character, content: Faker::TvShows::RickAndMorty.quote, user_id:(rand(User.first.id..User.last.id)))
+  gossip = Gossip.create!(title: Faker::Book.unique.title, content: Faker::TvShows::Simpsons.quote, user_id:(rand(User.first.id..User.last.id)))
 end
 
 10.times do
