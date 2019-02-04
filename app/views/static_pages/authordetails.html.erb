@@ -1,0 +1,13 @@
+<html>
+  <head>
+    <title>AuthorDetails</title>
+  </head>
+
+  <body>
+    <h1><%= @user.first_name %> <%= @user.last_name %></h1></br>
+    <p> Description : <%= @user.description %>
+    <p> Email : <%= @user.email %>
+    <p> Age : <%= @user.age %>
+    <p> City : <%= @user.city.name %>
+  </body>
+</html>

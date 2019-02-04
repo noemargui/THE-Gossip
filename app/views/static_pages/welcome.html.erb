@@ -1,15 +1,15 @@
 <html>
   <head>
-    <title>Welcome</title>
-    
+    <title>Welcome</title>   
   </head>
 
   <body>
     <h1>BIENVENUE <%= params[:id] %>! Ici c’est notre super site de potins, il est chouette, non ?</h1>
-    <% gossips.each do |gossip| %>
+    <% @gossips.each do |gossip| %>
       <p>
-        <%= gossip.author %><br/>
-        <%= gossip.content %>
+        <%= gossip.user.first_name %><br/>
+        <%= gossip.title %><br/>
+        <a href="/static_pages/gossipdetails/<%= gossip.id %>">Voir plus</a> 
       </p>
     <% end %>
   </body>
