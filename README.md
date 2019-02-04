@@ -21,3 +21,5 @@
   *Note: dans un tout autre registre, ne pas oublier de faire un petit bundle install, un rails db:create, un rails db:migrate, un rails db:create, et enfin un rails server. *
 
   *Ensuite, rendez-vous sur http://localhost:3000/static_pages/welcome/tonprénom 😉*
+
+   ### @Noé Margui & @Gauthier
