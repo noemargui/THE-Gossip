@@ -10,10 +10,12 @@
         <% @gossips.each do |gossip| %>
           <div class="col-md-4">
             <div class="card" style="width: 18rem;">
-              <div class="card-body">
-                <h5 class="text-warning" class="card-title"><%= gossip.user.first_name %></h5>
-                <p class="card-text"><%= gossip.title %></p>
-                <a href="/static_pages/gossipdetails/<%= gossip.id %>" class="btn btn-danger">Voir plus</a> 
+              <div class="bg-light">
+                <div class="card-body">
+                  <h5 class="text-warning" class="card-title"><%= gossip.user.first_name %></h5>
+                  <p class="card-text"><b><%= gossip.title %></b></p>
+                  <a href="/static_pages/gossipdetails/<%= gossip.id %>" class="btn btn-outline-danger">Voir plus</a> 
+                </div>
               </div>
             </div></br>
           </div>
