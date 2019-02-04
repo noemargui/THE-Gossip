@@ -1,10 +1,11 @@
 <html>
+
   <head>
     <title>Welcome</title>   
   </head>
 
   <body>
-    <h1 class="text-danger"><center>BIENVENUE <%= params[:id] %> sur notre super site de potins, il est 🦉 non ?</h1><center></br>
+    <h1 class="text-danger"><center>Bienvenue <%= params[:id] %> sur notre super 🦉 plateforme de gossips...</h1><center></br>
     <div class="container">
       <div class="row">
         <% @gossips.each do |gossip| %>
@@ -23,4 +24,11 @@
       </div>
     </div>
   </body>
+
+  <footer class="page-footer font-small grey">
+    <div class="text-danger" class="footer-copyright text-center py-3">© 2019 Copyright:
+      <a href="https://mdbootstrap.com/education/bootstrap/" class="text-danger"> Made with ♥ by Noé & Gauthier </a>
+    </div></br>
+  </footer>
+
 </html>
