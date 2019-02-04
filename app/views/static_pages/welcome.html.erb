@@ -4,18 +4,21 @@
   </head>
 
   <body>
-    <h1>BIENVENUE <%= params[:id] %>! Ici c’est notre super site de potins, il est chouette, non ?</h1>
-    <% @gossips.each do |gossip| %>
-      <div class=“mx-auto” style=“width: 200px;“>
-        <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src=".../100px180/" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title"><%= gossip.user.first_name %></h5>
-            <p class="card-text"><%= gossip.title %></p>
-            <a href="/static_pages/gossipdetails/<%= gossip.id %>">Voir plus</a>   
+    <h1 class="text-danger"><center>BIENVENUE <%= params[:id] %> sur notre super site de potins, il est 🦉 non ?</h1><center></br>
+    <div class="container">
+      <div class="row">
+        <% @gossips.each do |gossip| %>
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="text-warning" class="card-title"><%= gossip.user.first_name %></h5>
+                <p class="card-text"><%= gossip.title %></p>
+                <a href="/static_pages/gossipdetails/<%= gossip.id %>" class="btn btn-danger">Voir plus</a> 
+              </div>
+            </div></br>
           </div>
-        </div>
+        <% end %>
       </div>
-    <% end %>
+    </div>
   </body>
 </html>

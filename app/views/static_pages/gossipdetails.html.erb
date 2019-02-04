@@ -3,10 +3,10 @@
     <title>GossipDetails</title>
   </head>
 
-  <body>
-    <h1> Title : <%= @gossip.title %></h1></br>
-    <p> Author : <a href="/static_pages/authordetails/<%= @user.id %>"><%= @gossip.user.first_name%> <%= @gossip.user.last_name%></a></p>
+  <body><center>
+    <h1 class="text-danger"> Title : <%= @gossip.title %></h1></br>
+    <p> Author : <a href="/static_pages/authordetails/<%= @user.id %>"><%= @gossip.user.first_name%> <%= @gossip.user.last_name%></a></p></br>
     <p> Content : <%= @gossip.content %></p></br>
-    <p> Created at : <%= @gossip.created_at %></p></br>
+    <p> Created at : <%= @gossip.created_at %></p></br></center>
   </body>
 </html>
