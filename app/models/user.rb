@@ -6,4 +6,10 @@ class User < ApplicationRecord
   has_many :comments
   has_many :likes
   belongs_to :city
+
+  validates :first_name, presence: true
+  validates :last_name, presence: true
+  validates :description, presence: true
+  validates :email, presence: true, uniqueness: true, format: { with: /\A[^@\s]+@([^@\s]+\.)+[^@\s]+\z/, message: "Email Adress Please"}
+  validates :age, presence: true, numericality: { greater_than: 0 }
 end
