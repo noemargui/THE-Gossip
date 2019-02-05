@@ -4,7 +4,6 @@ class StaticPagesController < ApplicationController
   end
   
   def team
-
   end
 
   def contact
@@ -16,6 +15,7 @@ class StaticPagesController < ApplicationController
   end
 
   def authordetails
-    @user = Gossip.find(params[:id]).user
+    @user = User.find(params[:id])
   end
+
 end
