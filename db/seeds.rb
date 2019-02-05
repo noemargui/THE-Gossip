@@ -37,6 +37,8 @@ end
   user = User.create!(first_name: Faker::Name.unique.first_name, last_name: Faker::Name.unique.last_name, city_id:(rand(City.first.id..City.last.id)), description: Faker::Food.description, age: Faker::Number.number(2), email: Faker::Internet.email)
 end
 
+User.create!(first_name: "Ano", last_name: "Nymous", description: "I am more Ano than Nymous", email: "ano@nymous.fr", age: 23, city_id: 1)
+
 20.times do
   gossip = Gossip.create!(title: Faker::Book.unique.title, content: Faker::TvShows::Simpsons.quote, user_id:(rand(User.first.id..User.last.id)))
 end
