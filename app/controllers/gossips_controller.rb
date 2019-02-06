@@ -15,7 +15,7 @@ class GossipsController < ApplicationController
   		flash[:success] = "Success"
   	else
   		flash[:error] = "Error"
-  		render 'new' # sinon, il render la view new (celle sur laquelle on est déja)
+  		render :new # sinon, il render la view new (celle sur laquelle on est déja)
   	end
   end
 

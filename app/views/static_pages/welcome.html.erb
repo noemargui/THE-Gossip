@@ -9,7 +9,7 @@
       <div class="alert alert-success role="alert"><%= flash[:success] %></div>
     <% end %>
     <h1 class="text-danger"><center>Bienvenue <%= params[:id] %> sur notre super 🦉 plateforme de gossips...</h1><center></br>
-    <a href="/new" class="btn btn-outline-warning btn-lg">Je crée un Gossip</a></br></br>
+    <a href="gossips/new" class="btn btn-outline-warning btn-lg">Je crée un Gossip</a></br></br>
     <div class="container">
       <div class="row">
         <% @gossips.each do |gossip| %>
