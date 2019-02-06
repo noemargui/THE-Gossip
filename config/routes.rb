@@ -6,5 +6,6 @@ Rails.application.routes.draw do
   get '/gossipdetails/:id', to: 'static_pages#gossipdetails'
   get '/authordetails/:id', to: 'static_pages#authordetails'
   resources :gossips, only: [:new, :create]
+  get '/new', to: 'gossips#new'
   root 'static_pages#welcome'
 end
