@@ -11,7 +11,7 @@ class GossipsController < ApplicationController
   	# Une fois la création faite, on redirige généralement vers la méthode show (pour afficher le potin créé)
   	@gossip = Gossip.new(:user => User.find(10), :title => params[:title], :content => params[:content])
   	if @gossip.save #ici on essaye de sauvegarder en base @gossip
-  		redirect_to '/welcome' #si OK, redirige vers la page index
+  		redirect_to '/' #si OK, redirige vers la page index
   		flash[:success] = "Success"
   	else
   		flash[:error] = "Error"
