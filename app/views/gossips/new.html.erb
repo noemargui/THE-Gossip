@@ -3,6 +3,10 @@
   </head>
   <body>
 
+		<% if flash[:error] %>
+			<div class="alert alert-danger role="alert"><%= flash[:error] %></div>
+		<% end %>
+
     <%= form_tag url_for(action: 'create'), method: "post" do %>
 
       <%= label_tag 'Title' %>
@@ -15,17 +19,6 @@
 
       <%= submit_tag "Create Gossip" %>
 
-    <% end %>
-
-    <% if @gossip.errors.any? %>
-	    <div class="alert alert-danger" role="alert">
-	    	<p>Impossible de créer le gossip pour la/les raison(s) ci-dessous :</p>
-	        <ul>
-	          <% @gossip.errors.full_messages.each do |message| %>
-	            <li><%= message %></li>
-	          <% end %>
-	        </ul>
-	    </div>
     <% end %>
 
   </body>
